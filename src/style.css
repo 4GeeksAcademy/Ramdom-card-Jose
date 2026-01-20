@@ -1,5 +1,90 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-body{
+body {
+    user-select: none;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(100deg, #2b9245 0%, #063b0f 100%);
+}
+
+.Header {
+    text-align: center;
+}
+
+.contenedor {
+    display: flex;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+   }
+
+.card {
+    width: 200px;
+    height: 300px;
     background: white;
+    border: solid 2px black;
+    border-radius: 10px;
+    box-shadow: 0 7px 50px rgba(0, 0, 0, 0.3);
+    margin: 30px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-suit {
+    font-size: 50px;
+    text-align: left;
+}
+
+.number {
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.bottom-suit {
+    font-size: 50px;
+    transform: rotate(180deg);
+    text-align: left;
+}
+
+.card.rojo {
+    color: #ff1900;
+}
+
+.card.negro {
+    color: #000000;
+}
+button {
+    background: #063b0f;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
 }
